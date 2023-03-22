@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# Appointment Planner
+Coursework assignment to practice React hooks.
+
+Objective is to make a functional contacts list and appointment scheduler. App needs to check for conflicts between entries and prevent registry of duplicates.
+
+
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
