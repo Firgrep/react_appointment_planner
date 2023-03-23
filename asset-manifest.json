@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/react-appointment-planner/static/js/main.2b990fa0.js",
-    "index.html": "/react-appointment-planner/index.html",
-    "main.2b990fa0.js.map": "/react-appointment-planner/static/js/main.2b990fa0.js.map"
+    "main.js": "/react_appointment_planner/static/js/main.2b990fa0.js",
+    "index.html": "/react_appointment_planner/index.html",
+    "main.2b990fa0.js.map": "/react_appointment_planner/static/js/main.2b990fa0.js.map"
   },
   "entrypoints": [
     "static/js/main.2b990fa0.js"
