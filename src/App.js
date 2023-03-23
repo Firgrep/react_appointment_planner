@@ -22,7 +22,14 @@ function App() {
       email: "spirits@finlandia.fi"
     }
   ]);
-  const [appointments, setAppointments] = useState([]);
+  const [appointments, setAppointments] = useState([
+    {
+      title: "Code review with Markus",
+      contact: "Markus",
+      date: "2024-03-15",
+      time: "17:40"
+    }
+  ]);
 
   /*
   Implement functions to add data to
@@ -71,7 +78,7 @@ function App() {
           />
         }>
       </Route>
-      
+
     </Route>
   ));
 
