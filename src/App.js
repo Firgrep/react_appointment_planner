@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { RouterProvider, createBrowserRouter, 
+import { RouterProvider, createHashRouter,
          createRoutesFromElements, Route } from "react-router-dom";
 import { AppointmentsPage } from "./containers/appointmentsPage/AppointmentsPage";
 import { ContactsPage } from "./containers/contactsPage/ContactsPage";
@@ -12,9 +12,9 @@ function App() {
   */
   const [contacts, setContacts] = useState([
     {
-      name: "Tom",
+      name: "Tommy",
       phone: "4445556666",
-      email: "tom@company.net" 
+      email: "tommy@company.net" 
     },
     {
       name: "Markus",
@@ -54,7 +54,9 @@ function App() {
     setAppointments(prev => [newAppointment, ...prev]);
   }
 
-  const appRouter = createBrowserRouter(createRoutesFromElements(
+  // Best to use createBrowserRouter but since it does not work with gh-pages
+  // createHashRouter is used instead here specifically.
+  const appRouter = createHashRouter(createRoutesFromElements(
     <Route path="/" element={ <Root /> }>
 
       <Route 
