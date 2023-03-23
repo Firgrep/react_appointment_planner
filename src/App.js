@@ -48,27 +48,31 @@ function App() {
   }
 
   const appRouter = createBrowserRouter(createRoutesFromElements(
-  <Route path="/" element={ <Root /> }>
-    <Route 
-      index 
-      path="/" 
-      element={ 
-        <ContactsPage 
-          contacts={contacts}
-          addContact={addContact}
-        />
-      }>
+    <Route path="/" element={ <Root /> }>
+
+      <Route 
+        index 
+        path="/" 
+        element={ 
+          <ContactsPage 
+            contacts={contacts}
+            addContact={addContact}
+          />
+        }>
+      </Route>
+
+      <Route 
+        path="/appointments" 
+        element={ 
+          <AppointmentsPage
+            contacts={contacts}
+            appointments={appointments}
+            addAppointment={addAppointment}
+          />
+        }>
+      </Route>
+      
     </Route>
-    <Route 
-      path="/appointments" 
-      element={ 
-        <AppointmentsPage 
-          appointments={appointments}
-          addAppointment={addAppointment}
-        />
-      }>
-    </Route>
-  </Route>
   ));
 
   return (

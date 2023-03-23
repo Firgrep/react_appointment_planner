@@ -5,10 +5,16 @@ const Navigation = () => {
 
   return (
     <nav>
-      <NavLink to="/" activeClassName="active">
+      <NavLink 
+        to="/"
+        className={ ({ isActive }) => `a ${isActive ? "active" : ""} `}
+      >
         Contacts
       </NavLink>
-      <NavLink to="/appointments" activeClassName="active">
+      <NavLink 
+        to="/appointments" 
+        className={ ({ isActive }) => `a ${isActive ? "active" : ""} `}
+      >
         Appointments
       </NavLink>
    </nav>
